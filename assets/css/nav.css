@@ -1,0 +1,893 @@
+@media (min-width: 35em) {
+  .profileformbox {
+    width: 60rem;
+    padding: 2.4rem;
+    border-radius: 1.6rem;
+    background-color: white;
+    position: fixed;
+    top: 4rem;
+    right: -100%;
+    z-index: 999;
+    box-shadow: -1.6rem -1.6rem 2.4rem rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+
+  .profileformbox.show {
+    position: fixed;
+    right: 1rem;
+  }
+
+  .profileformbox > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+
+  .profileformbox > div > div {
+    flex: 10rem 1 1;
+  }
+
+  .close-profile {
+    margin-bottom: 2.4rem;
+  }
+
+  .close-profile > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--muted);
+    color: white;
+    font-size: 1.2rem;
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    padding: 0.4rem;
+  }
+
+  .profile-upload-bx {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+  }
+
+  .profile-upload-bx label {
+    background-color: var(--muted);
+    color: white;
+    width: 12rem;
+    height: 3.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+  }
+
+  .profile-upload-bx label > input {
+    visibility: hidden;
+  }
+
+  .upload-div-box {
+    display: flex;
+  }
+
+  .upload-div-box > div {
+    flex: 5rem 1 1;
+  }
+
+  .expiriesbx {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.1rem 0.4rem hsl(var(--muted), 0.3);
+    align-items: center;
+    line-height: 1.5rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .smssbx {
+    margin-top: 1.2rem;
+  }
+
+  .smssbx span {
+    background-color: #444;
+    color: white;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    display: block;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .smssbx input {
+    margin-block: 0.7em;
+    width: 100%;
+    padding: 0.5em;
+    outline: none;
+    border: solid 0.1rem #ccc;
+  }
+
+  .smssbx a {
+    display: block;
+    width: 100%;
+    padding: 0.4em;
+    margin-top: 1em;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .smssbx textarea {
+    width: 100%;
+    height: 7rem;
+  }
+
+  .expbtns {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.2rem;
+  }
+
+  .sendsmstoclient span {
+    display: block;
+    width: max-content;
+    flex: 2rem 1 1;
+    margin-inline: auto;
+    color: white !important;
+  }
+
+  .expbtns a {
+    display: block;
+    font-size: 1rem;
+    width: 10rem;
+    text-align: center;
+  }
+
+  .explabel span {
+    display: inline-block;
+    background-color: #47bf7f;
+    padding: 0.2em;
+    color: white;
+  }
+
+  .expbtns a:nth-of-type(1) {
+    border: solid 0.1rem #333;
+    padding: 0.5em;
+    color: #333;
+  }
+  .expbtns a:nth-of-type(1):hover {
+    background-color: #333;
+    padding: 0.5em;
+    color: white;
+  }
+
+  .expbtns a:nth-of-type(2) {
+    background-color: #47bf7f;
+    padding: 0.5em;
+    color: white;
+  }
+  .expbtns a:nth-of-type(2):hover {
+    border: solid 0.1rem #333;
+    background-color: white;
+    color: #333;
+    padding: 0.5em;
+  }
+
+  .contarea {
+    padding: 1.5em;
+    height: 25rem;
+    overflow-y: scroll;
+    width: 30rem;
+  }
+  .expiriesbx-details h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .expiriesbx-details small {
+    font-size: 1.1rem;
+    display: block;
+  }
+  .expiriesbx-details strong {
+    font-size: 1rem;
+  }
+
+  .bellicon {
+    margin-right: 2em;
+    position: relative;
+  }
+
+  .remondexbx {
+    display: none !important;
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    box-shadow: 0.6rem 0.6rem 0.8rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    right: 0;
+  }
+
+  .closemainexpbox {
+    margin-left: 1.2em;
+    width: 4rem;
+    text-align: center;
+    background-color: #444;
+    color: white;
+    display: block;
+    padding: 0.2em;
+    border-radius: 2rem;
+    border: solid 0.1rem #ccc;
+    font-size: 1.1rem;
+  }
+
+  .remondexbx.show {
+    display: block !important;
+  }
+
+  .alert-rounded {
+    width: 3rem;
+    cursor: pointer;
+    height: 3rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    display: none;
+    text-align: center;
+  }
+
+  .alert-rounded.show {
+    display: block;
+  }
+
+  .activelink {
+    background-color: var(--muted);
+    color: white;
+    padding-block: 0.3em;
+    padding-inline: 1em;
+    border-radius: 2rem;
+  }
+
+  .logo {
+    width: 5rem;
+    height: 3.5rem;
+    background-color: var(--muted);
+    margin-left: 2rem;
+  }
+
+  .navbar {
+    display: flex;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    flex-wrap: wrap;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 0 3rem hsl(var(--black), 0.1);
+    color: hsl(--muted);
+  }
+
+  .navbar > div {
+    flex: 10rem 1 1;
+  }
+
+  .nav-bar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-bar-wrapper div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-bar-icons > .appexpiration {
+    color: red;
+  }
+
+  .nav-bar-icons > .other-nav-details {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .nav-bar-icons > .other-nav-details > .profile-img,
+  .bell-icon,
+  .logout {
+    margin-right: 4rem;
+  }
+
+  .nav-bar-icons > .other-nav-details > .logout {
+    font-size: min(1.6rem, 0.8vw);
+    display: block;
+    background-color: var(--muted);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+  }
+
+  .nav-bar-icons > .other-nav-details > .profile-img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--muted);
+  }
+
+  footer {
+    background-color: hsl(var(--white));
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: hsl(--muted);
+    text-align: center;
+    z-index: 10;
+  }
+
+  .bell-icon {
+    color: var(--muted);
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: flex;
+    gap: 3rem;
+  }
+  .nav-item {
+    position: relative;
+    width: max-content;
+  }
+
+  .nav-item .nav-link {
+    color: var(--muted);
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    font-size: min(1.6rem, 1vw);
+    padding-block: 0.8rem;
+    padding-inline: 1.2rem;
+  }
+
+  .nav-item .nav-link:hover {
+    background-color: var(--muted);
+    color: white !important;
+    padding-block: 0.8rem;
+    padding-inline: 1.2rem;
+    border-radius: 2.4rem;
+  }
+
+  .carrat.nav-link::after {
+    content: '';
+    position: absolute;
+    border: 0.4rem solid transparent;
+    border-top: solid 0.7rem var(--muted);
+    top: 0.7rem;
+    right: -1.1rem;
+    transform: rotate(58deg);
+    transition: 0.2s;
+    transform-origin: center center;
+  }
+
+  .navbar-nav:hover .carrat.nav-link::after {
+    transform: rotate(0deg);
+    top: 0.5rem;
+  }
+
+  .dropdown-menu {
+    font-size: min(1.4rem, 1.2vw);
+    position: absolute;
+    padding: 2rem;
+    background-color: hsl(var(--white));
+    left: 0;
+    top: 2rem!;
+    width: max-content;
+    display: none;
+    transition: 1s;
+    border-radius: 1.4rem;
+    border: solid transparent 1px !important;
+    box-shadow: 2px 2px 6px rgb(126, 107, 107);
+  }
+
+  .dropdown-menu a {
+    color: var(--muted);
+  }
+
+  .dropdown-menu::after {
+    content: '';
+    position: absolute;
+    border: solid 0.8rem transparent;
+    border-bottom: solid 0.9rem hsl(var(--muted), 0.5);
+    top: -1.6rem;
+    left: 0;
+  }
+
+  .dropdown-menu li {
+    padding: 0.1rem;
+  }
+
+  .navbar-nav li:hover > ul.dropdown-menu {
+    display: block !important;
+  }
+
+  .save-profile-btn {
+    display: block;
+    background-color: hsl(var(--success));
+    color: white;
+    padding-block: 0.2em;
+    padding-inline: 0.6em;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+  }
+
+  .save-profile-btn:hover {
+    background-color: white;
+    border: solid 0.1rem var(--muted);
+    color: var(--muted);
+  }
+
+  .upload-div-box {
+    display: flex;
+  }
+  .upload-div-box div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .upload-div-box div {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .upload-div-box div:nth-of-type(1) {
+    flex-basis: 6rem;
+  }
+
+  .upload-div-box div:nth-of-type(2) {
+    flex-basis: 4rem;
+    height: 3rem;
+    overflow: hidden;
+  }
+  .close-box {
+    display: none;
+  }
+}
+
+@media (max-width: 35em) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+
+    z-index: 7;
+    box-shadow: 0 0.5rem 0 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  /*------------------------
+  BEGIN PROFIE
+  --------------------------*/
+
+  .saveprofile{
+    margin-top: 2rem;
+  }
+
+  .save-profile-btn {
+    display: block;
+    background-color: hsl(var(--success));
+    color: white;
+    padding-block: 0.2em;
+    padding-inline: 0.6em;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+  }
+
+  .save-profile-btn:hover {
+    background-color: white;
+    border: solid 0.1rem var(--muted);
+    color: var(--muted);
+  }
+
+  .nav-bar-icons > .other-nav-details > .profile-img,
+  .bell-icon,
+  .logout {
+    margin-right: 4rem;
+  }
+
+  .nav-bar-icons > .other-nav-details > .profile-img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--muted);
+  }
+
+  .profileformbox {
+    width: 30rem;
+    padding: 2.4rem;
+    border-radius: 1.6rem;
+    background-color: white;
+    position: fixed;
+    top: 4rem;
+    right: -100%;
+    z-index: 999;
+    box-shadow: -1.6rem -1.6rem 2.4rem rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+
+  .profileformbox.show {
+    position: fixed;
+    right: 1rem;
+  }
+
+
+
+
+  .close-profile {
+    margin-bottom: 2.4rem;
+  }
+
+  .close-profile > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--muted);
+    color: white;
+    font-size: 1.2rem;
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    padding: 0.4rem;
+  }
+
+  .profile-upload-bx {
+    display: flex;
+
+    gap: 1.6rem;
+  }
+
+  .profile-upload-bx label {
+    background-color: var(--muted);
+    color: white;
+    width: 12rem;
+    height: 3.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+  }
+
+  .profile-upload-bx label > input {
+    visibility: hidden;
+  }
+
+  /*------------------------
+  END PROFIE
+  --------------------------*/
+
+  .upload-div-box {
+    display: flex;
+  }
+  .upload-div-box div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .upload-div-box div {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .upload-div-box div:nth-of-type(1) {
+    flex-basis: 6rem;
+  }
+
+  .upload-div-box div:nth-of-type(2) {
+    flex-basis: 4rem;
+    height: 3rem;
+    overflow: hidden;
+  }
+  .close-box {
+    display: none;
+  }
+
+  .other-nav-details {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-bar-icons > .appexpiration {
+    color: red;
+  }
+
+  .nav-bar-icons > .other-nav-details > .logout {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--muted);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    width: 10rem;
+  }
+
+  .upload-div-box {
+    display: flex;
+  }
+
+  .upload-div-box > div {
+    flex: 5rem 1 1;
+  }
+
+  .expiriesbx {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.1rem 0.4rem hsl(var(--muted), 0.3);
+    align-items: center;
+    line-height: 1.5rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .smssbx {
+    margin-top: 1.2rem;
+  }
+
+  .smssbx span {
+    background-color: #444;
+    color: white;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    display: block;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .smssbx input {
+    margin-block: 0.7em;
+    width: 100%;
+    padding: 0.5em;
+    outline: none;
+    border: solid 0.1rem #ccc;
+  }
+
+  .smssbx a {
+    display: block;
+    width: 100%;
+    padding: 0.4em;
+    margin-top: 1em;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .smssbx textarea {
+    width: 100%;
+    height: 7rem;
+  }
+
+  .expbtns {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.2rem;
+  }
+
+  .sendsmstoclient span {
+    display: block;
+    width: max-content;
+    flex: 2rem 1 1;
+    margin-inline: auto;
+    color: white !important;
+  }
+
+  .expbtns a {
+    display: block;
+    font-size: 1rem;
+    width: 10rem;
+    text-align: center;
+  }
+
+  .explabel span {
+    display: inline-block;
+    background-color: #47bf7f;
+    padding: 0.2em;
+    color: white;
+  }
+
+  .expbtns a:nth-of-type(1) {
+    border: solid 0.1rem #333;
+    padding: 0.5em;
+    color: #333;
+  }
+  .expbtns a:nth-of-type(1):hover {
+    background-color: #333;
+    padding: 0.5em;
+    color: white;
+  }
+
+  .expbtns a:nth-of-type(2) {
+    background-color: #47bf7f;
+    padding: 0.5em;
+    color: white;
+  }
+  .expbtns a:nth-of-type(2):hover {
+    border: solid 0.1rem #333;
+    background-color: white;
+    color: #333;
+    padding: 0.5em;
+  }
+
+  .contarea {
+    padding: 1.5em;
+    height: 25rem;
+    overflow-y: scroll;
+    width: 30rem;
+  }
+  .expiriesbx-details h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .expiriesbx-details small {
+    font-size: 1.1rem;
+    display: block;
+  }
+  .expiriesbx-details strong {
+    font-size: 1rem;
+  }
+
+  .bellicon {
+    margin-right: 2em;
+    position: relative;
+  }
+
+  .remondexbx {
+    display: none !important;
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    box-shadow: 0.6rem 0.6rem 0.8rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    left: 0;
+  }
+
+  .closemainexpbox {
+    margin-left: 1.2em;
+    width: 4rem;
+    text-align: center;
+    background-color: #444;
+    color: white;
+    display: block;
+    padding: 0.2em;
+    border-radius: 2rem;
+    border: solid 0.1rem #ccc;
+    font-size: 1.1rem;
+  }
+
+  .remondexbx.show {
+    display: block !important;
+  }
+
+  .alert-rounded {
+    width: 3rem;
+    cursor: pointer;
+    height: 3rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    display: none;
+    text-align: center;
+  }
+
+  .alert-rounded.show {
+    display: block;
+  }
+
+  .activelink {
+    background-color: var(--muted);
+    color: white;
+    padding-block: 0.3em;
+    padding-inline: 1em;
+    border-radius: 2rem;
+  }
+
+  .nav-bar-wrapper {
+    position: fixed;
+    left: -199%;
+    top: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 80%;
+    padding: 2.4rem;
+    background-color: white;
+    transition: 0.2s;
+  }
+
+  .nav-bar-wrapper.show {
+    left: 0;
+  }
+
+  .nav-overlay.show {
+    left: 0;
+  }
+
+  .nav-overlay {
+    transition: 0.2s;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .navbaritems ul li {
+    padding-block: 0.8rem;
+  }
+
+  .navbaritems ul li a {
+    font-size: 1.8rem;
+    color: #666;
+    text-transform: uppercase;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    height: 3rem;
+    margin-top: 0.9rem;
+  }
+
+  footer {
+    background-color: hsl(var(--white));
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: hsl(--muted);
+    text-align: center;
+    z-index: 10;
+  }
+
+  .mob-logo{
+    height: 7rem;
+    margin-bottom: 4rem;
+  }
+}

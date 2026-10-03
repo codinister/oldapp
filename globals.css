@@ -1,0 +1,76 @@
+@import './assets/css/font-awesome.min.css';
+@import './assets/css/nav.css';
+@import './assets/css/print.css';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  .cont {
+    padding-inline: 100px;
+    margin-inline: auto;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  h5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  h3 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  ul {
+    list-style: none;
+  }
+  .errors {
+    color: red;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .modal-overlay.show {
+    display: block;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .modal-box {
+    position: relative;
+    width: max-content;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 200;
+  }
+}

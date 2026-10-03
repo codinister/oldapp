@@ -1,0 +1,180 @@
+
+Date: 20 Nov 2025
+Time: 11:14:58
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.emd_date' in 'field list'
+ SQL ERROR:
+SELECT   
+        t.tax_id,
+        t.vat,	
+        t.nhil,
+        t.withholdingtax,
+        t.getfund,
+        t.covid,
+        t.subtotal,
+        t.discount,	
+        t.total,
+        t.profile,	
+        t.transportation,	
+        t.installation,	
+        t.location AS site_location,	
+        t.trans_type,	
+        t.createdAt AS invoice_date,
+        t.emd_date,
+        t.cust_id,	
+        t.user_id,	
+        t.addbank,
+        t.note,
+        t.uuid,
+        t.prepared_by,
+        t.vat_rate,
+        t.nhil_rate,
+        t.getfund_rate,
+        t.covid_rate,
+        t.withholdingtax_rate,
+        t.code,
+        c.*,p.pay_type, p.bank_acc_number FROM payment_history as p RIGHT JOIN tax as t ON p.tax_id = t.tax_id JOIN customers as c ON t.cust_id = c.cust_id WHERE t.tax_id = ? AND t.code = ?
+
+
+Date: 20 Nov 2025
+Time: 11:14:26
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.emd_date' in 'field list'
+ SQL ERROR:
+SELECT   
+        t.tax_id,
+        t.vat,	
+        t.nhil,
+        t.withholdingtax,
+        t.getfund,
+        t.covid,
+        t.subtotal,
+        t.discount,	
+        t.total,
+        t.profile,	
+        t.transportation,	
+        t.installation,	
+        t.location AS site_location,	
+        t.trans_type,	
+        t.createdAt AS invoice_date,
+        t.emd_date,
+        t.cust_id,	
+        t.user_id,	
+        t.addbank,
+        t.note,
+        t.uuid,
+        t.prepared_by,
+        t.vat_rate,
+        t.nhil_rate,
+        t.getfund_rate,
+        t.covid_rate,
+        t.withholdingtax_rate,
+        t.code,
+        c.*,p.pay_type, p.bank_acc_number FROM payment_history as p RIGHT JOIN tax as t ON p.tax_id = t.tax_id JOIN customers as c ON t.cust_id = c.cust_id WHERE t.tax_id = ? AND t.code = ?
+
+
+Date: 20 Nov 2025
+Time: 10:57:43
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.emd_date' in 'field list'
+ SQL ERROR:
+SELECT   
+        t.tax_id,
+        t.vat,	
+        t.nhil,
+        t.withholdingtax,
+        t.getfund,
+        t.covid,
+        t.subtotal,
+        t.discount,	
+        t.total,
+        t.profile,	
+        t.transportation,	
+        t.installation,	
+        t.location AS site_location,	
+        t.trans_type,	
+        t.createdAt AS invoice_date,
+        t.emd_date,
+        t.cust_id,	
+        t.user_id,	
+        t.addbank,
+        t.note,
+        t.uuid,
+        t.prepared_by,
+        t.vat_rate,
+        t.nhil_rate,
+        t.getfund_rate,
+        t.covid_rate,
+        t.withholdingtax_rate,
+        t.code,
+        c.*,p.pay_type, p.bank_acc_number FROM payment_history as p RIGHT JOIN tax as t ON p.tax_id = t.tax_id JOIN customers as c ON t.cust_id = c.cust_id WHERE t.tax_id = ? AND t.code = ?
+
+
+Date: 20 Nov 2025
+Time: 10:57:36
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.emd_date' in 'field list'
+ SQL ERROR:
+SELECT   
+        t.tax_id,
+        t.vat,	
+        t.nhil,
+        t.withholdingtax,
+        t.getfund,
+        t.covid,
+        t.subtotal,
+        t.discount,	
+        t.total,
+        t.profile,	
+        t.transportation,	
+        t.installation,	
+        t.location AS site_location,	
+        t.trans_type,	
+        t.createdAt AS invoice_date,
+        t.emd_date,
+        t.cust_id,	
+        t.user_id,	
+        t.addbank,
+        t.note,
+        t.uuid,
+        t.prepared_by,
+        t.vat_rate,
+        t.nhil_rate,
+        t.getfund_rate,
+        t.covid_rate,
+        t.withholdingtax_rate,
+        t.code,
+        c.*,p.pay_type, p.bank_acc_number FROM payment_history as p RIGHT JOIN tax as t ON p.tax_id = t.tax_id JOIN customers as c ON t.cust_id = c.cust_id WHERE t.tax_id = ? AND t.code = ?
+
+
+Date: 20 Nov 2025
+Time: 10:57:35
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.emd_date' in 'field list'
+ SQL ERROR:
+SELECT   
+        t.tax_id,
+        t.vat,	
+        t.nhil,
+        t.withholdingtax,
+        t.getfund,
+        t.covid,
+        t.subtotal,
+        t.discount,	
+        t.total,
+        t.profile,	
+        t.transportation,	
+        t.installation,	
+        t.location AS site_location,	
+        t.trans_type,	
+        t.createdAt AS invoice_date,
+        t.emd_date,
+        t.cust_id,	
+        t.user_id,	
+        t.addbank,
+        t.note,
+        t.uuid,
+        t.prepared_by,
+        t.vat_rate,
+        t.nhil_rate,
+        t.getfund_rate,
+        t.covid_rate,
+        t.withholdingtax_rate,
+        t.code,
+        c.*,p.pay_type, p.bank_acc_number FROM payment_history as p RIGHT JOIN tax as t ON p.tax_id = t.tax_id JOIN customers as c ON t.cust_id = c.cust_id WHERE t.tax_id = ? AND t.code = ?
+

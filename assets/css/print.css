@@ -1,0 +1,37 @@
+@media print {
+  nav,
+  footer,
+  .start-end-dates,
+  .print-sales-report {
+    display: none !important;
+  }
+
+  .reports-page {
+    padding: 0 !important;
+  }
+
+  .marginTop {
+    margin-top: 1rem !important;
+  }
+
+  body {
+    min-height: auto !important;
+    font-size: 1.2rem !important;
+  }
+
+  .dash-container {
+    width: 100%;
+    padding-inline: 0 !important;
+  }
+
+  .sales-report-table-list {
+    margin-inline: auto;
+    width: max-content !important;
+  }
+
+  .sales-report-table-list > div:nth-of-type(4) {
+    height: auto !important;
+    overflow-y: auto !important;
+    margin-top: 1.6rem;
+  }
+}

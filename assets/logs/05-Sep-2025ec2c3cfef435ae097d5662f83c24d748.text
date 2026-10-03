@@ -1,0 +1,26 @@
+
+Date: 05 Sep 2025
+Time: 13:00:14
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+ SQL ERROR:
+INSERT INTO history(	
+				activity,	
+				link,	
+				user_id,
+				createdAt,
+				code
+			) VALUES(?,?,?,?,?)
+
+
+Date: 05 Sep 2025
+Time: 13:00:14
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+ SQL ERROR:
+INSERT INTO history(	
+				activity,	
+				link,	
+				user_id,
+				createdAt,
+				code
+			) VALUES(?,?,?,?,?)
+

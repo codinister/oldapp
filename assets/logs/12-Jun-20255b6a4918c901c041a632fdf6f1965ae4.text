@@ -1,0 +1,72 @@
+
+Date: 12 Jun 2025
+Time: 15:25:01
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+ SQL ERROR:
+INSERT INTO customers(
+			fullname,
+			phone,
+			email,
+			location,
+			type,
+			user_id,
+			ref_id,
+			ref_type,
+			createdAt,
+			code
+		) VALUES(?,?,?,?,'customer',?,?,?,now(),?)
+
+
+Date: 12 Jun 2025
+Time: 15:25:01
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+ SQL ERROR:
+INSERT INTO customers(
+			fullname,
+			phone,
+			email,
+			location,
+			type,
+			user_id,
+			ref_id,
+			ref_type,
+			createdAt,
+			code
+		) VALUES(?,?,?,?,'customer',?,?,?,now(),?)
+
+
+Date: 12 Jun 2025
+Time: 15:25:01
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+ SQL ERROR:
+INSERT INTO customers(
+			fullname,
+			phone,
+			email,
+			location,
+			type,
+			user_id,
+			ref_id,
+			ref_type,
+			createdAt,
+			code
+		) VALUES(?,?,?,?,'customer',?,?,?,now(),?)
+
+
+Date: 12 Jun 2025
+Time: 15:24:54
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+ SQL ERROR:
+INSERT INTO customers(
+			fullname,
+			phone,
+			email,
+			location,
+			type,
+			user_id,
+			ref_id,
+			ref_type,
+			createdAt,
+			code
+		) VALUES(?,?,?,?,'customer',?,?,?,now(),?)
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KWIK POS Registration</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/appregistration.css" />
+  </head>
+  <body>
+    <div class="registeration-box">
+      <h2>KWIK POS</h2>
+      <div class="form-control">
+        <input type="text" placeholder=" " class="reg-inpt" name="firstname" />
+        <label>Admin Firstname</label>
+      </div>
+
+      <div class="form-control">
+        <input type="text" placeholder=" " class="reg-inpt" name="lastname" />
+        <label>Admin Lastname</label>
+      </div>
+
+      <div class="form-control">
+        <input type="text" placeholder=" " class="reg-inpt" name="phone" />
+        <label>Phone</label>
+      </div>
+
+      <div class="form-control">
+        <input type="text" placeholder=" " class="reg-inpt" name="username" />
+        <label>Username</label>
+      </div>
+
+      <div class="form-control">
+        <input
+          type="password"
+          placeholder=" "
+          class="reg-inpt showpass"
+          name="password"
+        />
+        <label>Password</label>
+        <i class="fa fa-eye togglepass">e</i>
+      </div>
+
+      <div class="form-control">
+        <input type="email" placeholder=" " class="reg-inpt" name="email" />
+        <label>Company Email</label>
+      </div>
+
+      <div class="form-control">
+        <input type="text" placeholder=" " class="reg-inpt" name="compname" />
+        <label>Company Name</label>
+      </div>
+
+      <div class="select-control">
+        <select class="reg-inpt" name="industry">
+          <option hidden>Select Industry</option>
+          <option value="rentals">Rentals</option>
+          <option value="retails">Retail</option>
+          <option value="service provider">Service Provider</option>
+          <option value="roofing company">Roofing Company</option>
+        </select>
+      </div>
+      <br />
+      <div class="result"></div>
+      <button class="register-btn">REGISTER</button>
+    </div>
+
+    <script src="assets/components/appregistration/appregistration.js"></script>
+  </body>
+</html>

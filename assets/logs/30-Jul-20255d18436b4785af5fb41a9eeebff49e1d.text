@@ -1,0 +1,63 @@
+
+Date: 30 Jul 2025
+Time: 15:30:36
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`kwikumxe_kwikpos`.`tax`, CONSTRAINT `fkcid` FOREIGN KEY (`cust_id`) REFERENCES `customers` (`cust_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ SQL ERROR:
+INSERT INTO tax (
+		tax_id,
+		vat,
+		nhil,
+		getfund,
+		covid,
+		subtotal, 
+		discount,
+		total,
+		profile,
+		transportation,
+		installation,
+		location,
+		trans_type,
+		createdAt,
+		cust_id,
+		user_id,
+		prepared_by,
+		note,
+		code,
+		withholdingtax, 
+		addbank,
+		vat_rate, 
+		nhil_rate, 
+		getfund_rate,
+		covid_rate,
+		withholdingtax_rate, 
+		uuid
+	)
+	VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+	ON DUPLICATE KEY UPDATE 
+	vat	= VALUES(vat),
+	nhil = VALUES(nhil),
+	getfund	= VALUES(getfund),
+	covid = VALUES(covid),
+	subtotal = VALUES(subtotal),
+	discount = VALUES(discount),
+	total = VALUES(total),
+	profile = VALUES(profile),
+	transportation = VALUES(transportation),
+	installation = VALUES(installation),
+	location = VALUES(location),
+	trans_type = VALUES(trans_type),
+	createdAt = VALUES(createdAt),
+	cust_id = VALUES(cust_id),
+	user_id = VALUES(user_id),
+	prepared_by = VALUES(prepared_by),
+	note = VALUES(note),
+	code = VALUES(code),
+	withholdingtax = VALUES(withholdingtax),
+	addbank = VALUES(addbank),
+	vat_rate = VALUES(vat_rate),
+	nhil_rate = VALUES(nhil_rate),
+	getfund_rate = VALUES(getfund_rate),
+	covid_rate = VALUES(covid_rate),
+	withholdingtax_rate = VALUES(withholdingtax_rate), 
+	uuid = VALUES(uuid)
+

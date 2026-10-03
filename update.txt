@@ -1,0 +1,10 @@
+Update settings table
+---------------------
+exp_limit
+stock_limit
+exp_reminder_phone
+
+daily_sales_report_alert
+customers_who_owe_alert
+low_stocks_alert
+exp_rentals_alert

@@ -1,0 +1,13 @@
+
+Date: 30 Jun 2026
+Time: 17:25:06
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+ SQL ERROR:
+INSERT INTO history(	
+				activity,	
+				link,	
+				user_id,
+				createdAt,
+				code
+			) VALUES(?,?,?,?,?)
+

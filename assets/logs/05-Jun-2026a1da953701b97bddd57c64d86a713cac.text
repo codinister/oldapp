@@ -1,0 +1,7 @@
+
+Date: 05 Jun 2026
+Time: 02:36:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sikacdsv_app.users' doesn't exist
+ SQL ERROR:
+SELECT s.app_status, s.app_expiry_date, u.* FROM users as u JOIN settings as s ON u.code = s.code WHERE u.username = ? AND s.app_status = 'active' AND u.status = 'Unblock' AND s.app_expiry_date  > NOW() 
+

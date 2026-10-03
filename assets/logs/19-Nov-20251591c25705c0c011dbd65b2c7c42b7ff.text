@@ -1,0 +1,211 @@
+
+Date: 19 Nov 2025
+Time: 12:39:04
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+ SQL ERROR:
+INSERT INTO sales(
+			s_id,
+			qty,
+			prod_id,
+			prod_name,
+			duration,
+			unit_price,
+			total,
+			code,
+			tax_id,
+			createdAt
+		)  VALUES (?,?,?,?,?,?,?,?,?,3575,2025-11-19),(?,?,?,?,?,?,?,?,?,3575,2025-11-19) 
+			ON DUPLICATE KEY UPDATE 
+			prod_id = VALUES(prod_id),
+			prod_name = VALUES(prod_name),
+			unit_price = VALUES(unit_price),
+			duration = VALUES(duration),
+			qty = VALUES(qty),
+			total = VALUES(total),
+			createdAt = VALUES(createdAt),
+			tax_id = VALUES(tax_id)
+
+
+Date: 19 Nov 2025
+Time: 12:33:03
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+ SQL ERROR:
+INSERT INTO sales(
+			s_id,
+			qty,
+			prod_id,
+			prod_name,
+			duration,
+			unit_price,
+			total,
+			code,
+			tax_id,
+			createdAt
+		)  VALUES (?,?,?,?,?,?,?,?,?,3574,2025-11-19),(?,?,?,?,?,?,?,?,?,3574,2025-11-19) 
+			ON DUPLICATE KEY UPDATE 
+			prod_id = VALUES(prod_id),
+			prod_name = VALUES(prod_name),
+			unit_price = VALUES(unit_price),
+			duration = VALUES(duration),
+			qty = VALUES(qty),
+			total = VALUES(total),
+			createdAt = VALUES(createdAt),
+			tax_id = VALUES(tax_id)
+
+
+Date: 19 Nov 2025
+Time: 12:29:53
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+ SQL ERROR:
+INSERT INTO tax (
+		tax_id,
+		vat,
+		nhil,
+		getfund,
+		covid,
+		subtotal, 
+		discount,
+		total,
+		profile,
+		transportation,
+		installation,
+		location,
+		trans_type,
+		createdAt,
+		end_date,
+		cust_id,
+		user_id,
+		prepared_by,
+		note,
+		code,
+		withholdingtax, 
+		addbank,
+		vat_rate, 
+		nhil_rate, 
+		getfund_rate,
+		covid_rate,
+		withholdingtax_rate, 
+		uuid
+	)
+	VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+	ON DUPLICATE KEY UPDATE 
+	vat	= VALUES(vat),
+	nhil = VALUES(nhil),
+	getfund	= VALUES(getfund),
+	covid = VALUES(covid),
+	subtotal = VALUES(subtotal),
+	discount = VALUES(discount),
+	total = VALUES(total),
+	profile = VALUES(profile),
+	transportation = VALUES(transportation),
+	installation = VALUES(installation),
+	location = VALUES(location),
+	trans_type = VALUES(trans_type),
+	createdAt = VALUES(createdAt),
+	end_date = VALUES(end_date),
+	cust_id = VALUES(cust_id),
+	user_id = VALUES(user_id),
+	prepared_by = VALUES(prepared_by),
+	note = VALUES(note),
+	code = VALUES(code),
+	withholdingtax = VALUES(withholdingtax),
+	addbank = VALUES(addbank),
+	vat_rate = VALUES(vat_rate),
+	nhil_rate = VALUES(nhil_rate),
+	getfund_rate = VALUES(getfund_rate),
+	covid_rate = VALUES(covid_rate),
+	withholdingtax_rate = VALUES(withholdingtax_rate), 
+	uuid = VALUES(uuid)
+
+
+Date: 19 Nov 2025
+Time: 12:20:30
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+ SQL ERROR:
+INSERT INTO tax (
+		tax_id,
+		vat,
+		nhil,
+		getfund,
+		covid,
+		subtotal, 
+		discount,
+		total,
+		profile,
+		transportation,
+		installation,
+		location,
+		trans_type,
+		createdAt,
+		end_date,
+		cust_id,
+		user_id,
+		prepared_by,
+		note,
+		code,
+		withholdingtax, 
+		addbank,
+		vat_rate, 
+		nhil_rate, 
+		getfund_rate,
+		covid_rate,
+		withholdingtax_rate, 
+		uuid
+	)
+	VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+	ON DUPLICATE KEY UPDATE 
+	vat	= VALUES(vat),
+	nhil = VALUES(nhil),
+	getfund	= VALUES(getfund),
+	covid = VALUES(covid),
+	subtotal = VALUES(subtotal),
+	discount = VALUES(discount),
+	total = VALUES(total),
+	profile = VALUES(profile),
+	transportation = VALUES(transportation),
+	installation = VALUES(installation),
+	location = VALUES(location),
+	trans_type = VALUES(trans_type),
+	createdAt = VALUES(createdAt),
+	end_date = VALUES(end_date),
+	cust_id = VALUES(cust_id),
+	user_id = VALUES(user_id),
+	prepared_by = VALUES(prepared_by),
+	note = VALUES(note),
+	code = VALUES(code),
+	withholdingtax = VALUES(withholdingtax),
+	addbank = VALUES(addbank),
+	vat_rate = VALUES(vat_rate),
+	nhil_rate = VALUES(nhil_rate),
+	getfund_rate = VALUES(getfund_rate),
+	covid_rate = VALUES(covid_rate),
+	withholdingtax_rate = VALUES(withholdingtax_rate), 
+	uuid = VALUES(uuid)
+
+
+Date: 19 Nov 2025
+Time: 11:41:28
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+ SQL ERROR:
+INSERT INTO sales(
+			s_id,
+			qty,
+			prod_id,
+			prod_name,
+			duration,
+			unit_price,
+			total,
+			code,
+			tax_id,
+			createdAt
+		)  VALUES (?,?,?,?,?,?,?,?,?,3573,2025-11-19) 
+			ON DUPLICATE KEY UPDATE 
+			prod_id = VALUES(prod_id),
+			prod_name = VALUES(prod_name),
+			unit_price = VALUES(unit_price),
+			duration = VALUES(duration),
+			qty = VALUES(qty),
+			total = VALUES(total),
+			createdAt = VALUES(createdAt),
+			tax_id = VALUES(tax_id)
+
