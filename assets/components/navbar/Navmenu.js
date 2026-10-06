@@ -17,7 +17,7 @@ const Navmenu = () => {
 
   return `
   <nav class="w-full bg-white shadow-sm z-20 fixed">
-    <div class="cont py-6 flex justify-between">
+    <div class="cont py-3 flex items-center justify-between">
 
     <div class="flex gap-6">
       <div>

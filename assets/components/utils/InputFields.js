@@ -5,7 +5,7 @@ const checkBox = ({ ...obj }) => {
   const { classname = '', labelname = '', name = '', check = '' } = obj;
 
   return `
-<div class="flex items-center shadow-xs mt-9">
+<div class="flex items-center shadow-xs mt-4">
 
     <input id="${name}" name="${name}" type="checkbox" ${check} value="" name="bordered-checkbox" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft ${classname} ">
 

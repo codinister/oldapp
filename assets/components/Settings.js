@@ -1,6 +1,5 @@
 import getIndustry from './utils/getIndustry.js';
 import SettingsHeader from './settings/SettingsHeader.js';
-import SettingsFileUpload from './settings/SettingsFileUpload.js';
 import CompanyDetails from './settings/CompanyDetails.js';
 import TermsCondition from './settings/TermsCondition.js';
 import BankDetails from './settings/BankDetails.js';
@@ -14,6 +13,7 @@ import setPage from './utils/setPage.js';
 import Notifications from './settings/Notifications.js';
 import rerender from './utils/rerender.js';
 import Button from './utils/v2/Button.js';
+import AccessControls from './settings/AccessControls.js';
 
 const Settings = () => {
   const sett = JSON.parse(localStorage.getItem('sinpt'));
@@ -38,7 +38,7 @@ const Settings = () => {
         ${Notifications(sett)}
         ${Other(duration)}
         ${ReceiptType(sett)}
-
+        ${AccessControls([])}
         <div>
           <a href="javascript:void(0);" class="save_setting">
             ${Button({

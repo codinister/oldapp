@@ -1,5 +1,5 @@
 const AccountProfile = (user) => {
-  console.log(user);
+
 
   return `
   <div  class="flex gap-6 items-center flex-row">

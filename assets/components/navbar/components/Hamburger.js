@@ -1,15 +1,13 @@
+import hamburgerEvent from '../events/hamburgerEvent.js';
 
-import Menus from './Menus.js'
 const Hamburger = (user) => {
+  const menu = user?.menus.filter((v) => v.menu_parent !== 'Privileges');
 
-  const menu = user?.menus.filter(v => v.menu_parent !== 'Privileges')
-
+  hamburgerEvent(menu);
 
   return `
-<img src="assets/images/hamburger.jpg" width="25" height="25" alt="" />
+      <img src="assets/images/hamburger.jpg" width="25" height="25" alt="" class="cursor-pointer hambrg" />
+  `;
+};
 
-${Menus(menu)}
-  `
-}
-
-export default Hamburger
+export default Hamburger;

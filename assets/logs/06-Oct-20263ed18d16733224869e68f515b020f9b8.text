@@ -1,0 +1,98 @@
+
+Date: 06 Oct 2026
+Time: 05:55:21
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT * FROM user_menu WHERE user_id =?
+
+
+Date: 06 Oct 2026
+Time: 05:55:21
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT menu_name  FROM user_menu WHERE menu_parent = 'Privileges' AND  user_id = ?
+
+
+Date: 06 Oct 2026
+Time: 05:55:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT * FROM user_menu WHERE user_id =?
+
+
+Date: 06 Oct 2026
+Time: 05:55:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT menu_name  FROM user_menu WHERE menu_parent = 'Privileges' AND  user_id = ?
+
+
+Date: 06 Oct 2026
+Time: 05:55:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT * FROM user_menu WHERE user_id =?
+
+
+Date: 06 Oct 2026
+Time: 05:55:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT menu_name  FROM user_menu WHERE menu_parent = 'Privileges' AND  user_id = ?
+
+
+Date: 06 Oct 2026
+Time: 05:55:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT * FROM user_menu WHERE user_id =?
+
+
+Date: 06 Oct 2026
+Time: 05:55:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT menu_name  FROM user_menu WHERE menu_parent = 'Privileges' AND  user_id = ?
+
+
+Date: 06 Oct 2026
+Time: 05:55:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT * FROM user_menu WHERE user_id =?
+
+
+Date: 06 Oct 2026
+Time: 05:55:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT menu_name  FROM user_menu WHERE menu_parent = 'Privileges' AND  user_id = ?
+
+
+Date: 06 Oct 2026
+Time: 05:55:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT * FROM user_menu WHERE user_id =?
+
+
+Date: 06 Oct 2026
+Time: 05:55:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT menu_name  FROM user_menu WHERE menu_parent = 'Privileges' AND  user_id = ?
+
+
+Date: 06 Oct 2026
+Time: 05:55:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT * FROM user_menu WHERE user_id =?
+
+
+Date: 06 Oct 2026
+Time: 05:55:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT menu_name  FROM user_menu WHERE menu_parent = 'Privileges' AND  user_id = ?
+
