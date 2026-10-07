@@ -1,5 +1,12 @@
 
 Date: 06 Oct 2026
+Time: 16:45:39
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
+ SQL ERROR:
+SELECT * FROM user_menu WHERE code = ?
+
+
+Date: 06 Oct 2026
 Time: 05:55:21
 SQLSTATE[42S02]: Base table or view not found: 1146 Table 'oldapp.user_menu' doesn't exist
  SQL ERROR:

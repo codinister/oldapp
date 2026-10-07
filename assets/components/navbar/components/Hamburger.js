@@ -1,9 +1,7 @@
 import hamburgerEvent from '../events/hamburgerEvent.js';
 
 const Hamburger = (user) => {
-  const menu = user?.menus.filter((v) => v.menu_parent !== 'Privileges');
-
-  hamburgerEvent(menu);
+hamburgerEvent(user)
 
   return `
       <img src="assets/images/hamburger.jpg" width="25" height="25" alt="" class="cursor-pointer hambrg" />

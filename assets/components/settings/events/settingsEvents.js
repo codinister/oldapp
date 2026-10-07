@@ -6,6 +6,7 @@ import innerHTML from '../../utils/v2/innerHTML.js';
 import checkErrors from '../../utils/v2/checkErrors.js';
 import { successMessage, warningMessage } from '../../utils/v2/modal.js';
 import Spinner from '../../utils/v2/Spinner.js';
+import navigate from '../../navbar/utils/navigate.js';
 
 const settingsEvents = (sett) => {
   const dailyReports = notificationsInputs(sett);
@@ -14,6 +15,8 @@ const settingsEvents = (sett) => {
   document.addEventListener('click', (e) => {
     //Save Settings
     if (e.target.matches('.save_setting')) {
+
+
       const obj = JSON.parse(localStorage.getItem('settingupdate'));
 
       if (!obj) {

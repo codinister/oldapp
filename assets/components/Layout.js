@@ -1,23 +1,19 @@
 import Navmenu from './navbar/Navmenu.js';
-const Layout = (page, html) => {
-  return `
-    <style>
-    .${page}{  
-        background-color: #425c59;
-        color: white!important;
-        padding-block: .8rem;
-        padding-inline: 1.2rem;
-        border-radius: 2.4rem;
-      }
-    </style>
+import innerHTML from './utils/v2/innerHTML.js';
+const Layout = (page) => {
+  innerHTML({
+    data: `
     <div class="nav-menu">${Navmenu()}</div>
     <div class="pt-21"></div>
-    ${html}
-    <footer class="bg-white">
+    <div>
+      ${page}
+    </div>
+    <footer class="bg-white w-full">
     <small>&copy; copyright 2023 <span id="appname"></span> by <a href="https://www.codenesta.com">Codenesta</a></small>
     </footer>	
-    <br><br><br>
-    `;
+    `,
+    outputClass: 'root',
+  });
 };
 
 export default Layout;

@@ -11,6 +11,10 @@ const TermsCondition = () => {
             </div>
             </div>
         </div>
+
+
+      
+
   `
 }
 

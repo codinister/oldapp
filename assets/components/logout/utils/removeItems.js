@@ -1,0 +1,26 @@
+const removeItems = () => {
+  localStorage.removeItem('sales');
+  localStorage.removeItem('sinpt');
+  localStorage.removeItem('prodlocalstorage');
+  localStorage.removeItem('userlocalstorage');
+  localStorage.removeItem('prozdlist');
+  localStorage.removeItem('zsdf');
+  localStorage.removeItem('nuser');
+  localStorage.removeItem('stocks');
+  localStorage.removeItem('qtys');
+  localStorage.removeItem('soldinv');
+  localStorage.removeItem('newrec');
+  localStorage.removeItem('filterby');
+  localStorage.removeItem('contract');
+  localStorage.removeItem('custinp');
+  localStorage.removeItem('custinfo');
+  localStorage.removeItem('deletedproformas');
+  localStorage.removeItem('deletedinvoices');
+  localStorage.removeItem('deletedreceipt');
+  localStorage.removeItem('prodlocalstorage');
+  localStorage.removeItem('userprofile');
+  localStorage.removeItem('usernote');
+  localStorage.removeItem('settingupdate');
+};
+
+export default removeItems;

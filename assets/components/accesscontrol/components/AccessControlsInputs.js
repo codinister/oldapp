@@ -6,8 +6,9 @@ const AccessControlsInputs = ({...options}) => {
     role, data
   } = options
   return `
-      <div>
-      <h4 class="my-6">Page Settings</h4>
+  <div class="flex gap-10">
+      <div class="flex-1">
+      <strong class="my-6">Page Settings</strong>
           ${checkBox({
             classname: 'accessinpt',
             labelname: 'Dashboard',
@@ -73,9 +74,9 @@ const AccessControlsInputs = ({...options}) => {
       </div>
 
 
-      <div>
+      <div class="flex-1">
 
-          <h4 class="my-6">Sales Settings</h4>
+          <strong class="my-6">Sales Settings</strong>
 
           ${checkBox({
             classname: 'accessinpt',
@@ -155,7 +156,7 @@ const AccessControlsInputs = ({...options}) => {
           })}
       </div>
   
-  
+  </div>
   `
 }
 

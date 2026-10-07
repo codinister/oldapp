@@ -27,7 +27,12 @@ const ReceiptType = (sett) => {
             </div>
         </div>
     
-        
+        <div>
+            ${Button({
+              className: 'save_setting',
+              buttonName: 'SAVE SETTING',
+            })}
+        </div>
   `;
 };
 

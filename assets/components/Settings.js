@@ -9,11 +9,9 @@ import Other from './settings/Other.js';
 import ReceiptType from './settings/ReceiptType.js';
 import settingsDuration from './settings/utils/settingsDuration.js';
 import settingsEvents from './settings/events/settingsEvents.js';
-import setPage from './utils/setPage.js';
 import Notifications from './settings/Notifications.js';
 import rerender from './utils/rerender.js';
-import Button from './utils/v2/Button.js';
-import AccessControls from './settings/AccessControls.js';
+import Layout from './Layout.js';
 
 const Settings = () => {
   const sett = JSON.parse(localStorage.getItem('sinpt'));
@@ -27,6 +25,9 @@ const Settings = () => {
   settingsEvents(sett);
 
   const duration = settingsDuration(industry);
+
+
+
   const page = `
       <div class="cont">
         ${SettingsHeader(sett)}
@@ -38,27 +39,19 @@ const Settings = () => {
         ${Notifications(sett)}
         ${Other(duration)}
         ${ReceiptType(sett)}
-        ${AccessControls([])}
-        <div>
-          <a href="javascript:void(0);" class="save_setting">
-            ${Button({
-              className: 'save_setting',
-              buttonName: 'SAVE SETTING',
-            })}
-          </a>
-        </div>
-
-
       </div>
+      
     `;
 
-  setPage('settings', page);
+    Layout(page)
 
-  //CKEDITOR INSTANCE
   CKEDITOR.replace('comp_terms', {
     height: '300px',
-  });
+  })
+
 };
+
+
 
 rerender(Settings, 2);
 
