@@ -2,7 +2,10 @@ import { classSelector } from '../../utils/Selectors.js';
 import postMethod from '../../utils/v2/postMethod.js';
 import Spinner from '../../utils/v2/Spinner.js';
 import { successMessage, warningMessage } from '../../utils/v2/modal.js';
-import { removeDisabledAttribute, setDisabledAttribute } from '../../utils/v2/attributes.js';
+import {
+  removeDisabledAttribute,
+  setDisabledAttribute,
+} from '../../utils/v2/attributes.js';
 const logoUploadEvent = () => {
   document.addEventListener('change', (e) => {
     //Logo File upload
@@ -28,9 +31,6 @@ const logoUploadEvent = () => {
         logo = classSelector('comp_logo').files[0];
       }
 
-      Spinner('logo-label');
-
-
       postMethod({
         inputs: [
           {
@@ -42,7 +42,7 @@ const logoUploadEvent = () => {
         callback: (data) => {
           console.log(data);
           if (data.indexOf('errors') != -1) {
-            return warningMessage({
+            warningMessage({
               title: 'Error Message',
               sub_title: data,
             });
@@ -55,8 +55,6 @@ const logoUploadEvent = () => {
               title: 'Logo Uploaded',
               sub_title: 'Logo has been uploaded successfully',
             });
-
-            Spinner('logo-label', 'Upload Logo (100px x 80px)');
           }
         },
       });
